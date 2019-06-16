@@ -9,13 +9,22 @@
     width: 80%;
     margin: auto;
 }
-
+.heading{
+    background-color: lime;
+}
 .jumbotron p:nth-last-of-type(2){
-    margin-left: 35%;
-    color: blue;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
 }
 .jumbotron p:nth-last-of-type(1){
-    margin-left: 35%;
-    color: blue;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.card{
+    border: 2px solid black;
+    width: 40%;
+   
 }
 

@@ -16,19 +16,34 @@
 </head>
 
 <body>
-    <div class="testing"></div>
+
     <div class="main-section">
         <div class="jumbotron">
-            <p>PRESS ANY KEY TO CONTINUE</p>
+            <p>This is a Hangman Game</p>
             <br>
-            <p>Wins: <strong><span id="winNumber">0</span></strong></p>
-            <p>Current Word: <span id="randomWord">Random Word</span></p>
-            <p>Number of guesses remaining: <strong><span id="numberOfGuesses">13</span></strong></p>
-            <p>Letter already guessed: <strong><span id="guessedWord"></span></strong></p>
-
+            <p>PRESS ANY KEY TO CONTINUE</p>
         </div>
     </div>
-
+    <div class="gameSection">
+        <div class="card">
+            <h2 class="card-header randomWordSection">Guessed Word</h2>
+            <div class="card-body">
+                <h2 class="card-title"><strong><span id="blanks">_ _ _ _ _ _ _</span></strong></h2>
+            </div>
+        </div>
+        <div class="card2">
+            <h2 class="card-header winSection">Wins: <span id="winNumber"></span></h2>
+        </div>
+        <div class="card3">
+            <h2 class="card-header guessNoSection">Number of Guesses remaining: <span id="guessNumber"></span></h2>
+        </div>
+        <div class="card3">
+            <h2 class="card-header guessedWordSection">Guessed Words: <span id="guessedWord"></span></h2>
+            <div class="card-body">
+                <h2 class="card-title"><strong><span id="alreadyGuessed"></span></strong></h2>
+            </div>
+        </div>
+    </div>
     <script src="assets/javascript/game.js"></script>
 </body>
 

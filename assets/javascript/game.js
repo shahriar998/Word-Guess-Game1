@@ -25,7 +25,7 @@ var guessDisplay = document.getElementById("guessNumber");
 
 
 
-//logic building what do display initially
+//logic building what to display initially
 function gameStart ()
 {
     console.log(randomChoise);
@@ -46,4 +46,29 @@ function gameStart ()
     guessDisplay.textContent = guessesRemaining;
 }
 
-gameStart();
+    gameStart();
+
+    //logic after the user press key to start
+
+    
+    document.onkeypress = function(event){
+        var keyPressed = event.key;
+        console.log(keyPressed);
+        console.log(wordBreak);
+
+        var userAlpha = String.fromCharCode(event.keyCode).toLowerCase();
+        // alert(userAlpha);
+         //when it matches with the alphabet in the word that computer has choosen
+         var matchAlpha = wordBreak.indexOf(keyPressed.charAt);
+
+         //testing
+         //console.log(matchAlpha);
+        if(wordBreak.indexOf(matchAlpha)>-1){
+            
+            //testing 
+            console.log("inside 1st if");
+           
+
+
+        }
+    }
